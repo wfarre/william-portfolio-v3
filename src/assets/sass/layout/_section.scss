@@ -1,0 +1,66 @@
+.section {
+  width: 80%;
+  &__header {
+    font-family: $section-title-font;
+    font-size: $section-title-size;
+  }
+}
+
+//Section on about me page
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10%;
+  margin-bottom: 100px;
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+  &__header {
+    font-size: $section-title-size;
+    color: $color-primary;
+  }
+  .container {
+    width: 60%;
+  }
+  //   .container-image {
+  //     width: 30%;
+  //   }
+  .image-wrapper {
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &--home {
+    width: 80%;
+    display: block;
+    &__header {
+      font-family: $section-title-font;
+      font-size: $section-title-size;
+    }
+  }
+}
+
+.section--about {
+  // margin-bottom: 350px;
+  margin-top: 350px;
+  .container {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  .image-wrapper {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+}

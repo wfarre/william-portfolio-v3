@@ -1,0 +1,343 @@
+body {
+  background-color: #e0e2db;
+  font-family: "Merriweather Sans", sans-serif;
+  color: "Merriweather Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+}
+
+.main {
+  padding: 0 100px;
+}
+
+.nav {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 30px;
+}
+.nav .menu-wrapper {
+  position: relative;
+  border: none;
+  border-left: 1px #070707 solid;
+  padding: 0;
+  padding-left: 30px;
+  background-color: transparent;
+}
+.nav .menu-wrapper__text {
+  font-size: 24px;
+  font-family: "Asap", sans-serif;
+}
+.nav .menu-wrapper:hover {
+  cursor: pointer;
+}
+.nav .logo-wrapper {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+.nav .logo-wrapper .logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav__menu-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+}
+.nav__menu-container .logo-wrapper {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.nav__menu-container .logo-wrapper .logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  fill: #070707;
+}
+.nav__menu-container .logo-wrapper .logo:hover {
+  cursor: pointer;
+  fill: #e34234;
+}
+
+.nav__menu {
+  padding: 10% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.nav__menu__item {
+  font-size: 48px;
+  color: #070707;
+  text-decoration: none;
+}
+.nav__menu__item:hover {
+  color: #e34234;
+  cursor: pointer;
+}
+
+.button {
+  padding: 11px 46px;
+  margin-top: 30px;
+  background-color: #e34234;
+  color: #e0e2db;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 15px;
+  border: solid 2px #e34234;
+  cursor: pointer;
+}
+.button:hover {
+  color: #e34234;
+  background-color: #e0e2db;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 100px;
+  padding: 5px 100px;
+  text-align: center;
+  background-color: #d2d4c8;
+}
+.footer__header {
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+  margin: 5px 0;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 16px;
+  padding: 0 20%;
+}
+.footer__nav__item {
+  text-decoration: none;
+  color: #2978a0;
+}
+.footer__copyright {
+  font-size: 13px;
+}
+
+.header {
+  padding: 0 100px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.header__main__subtitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+.header__main__subtitle .red {
+  color: #e34234;
+}
+.header__main__title {
+  font-family: "Lobster", cursive;
+  font-size: 72px;
+  margin: 10px 0;
+}
+.header__sns {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30%;
+  margin-top: 40px;
+}
+.header__sns .sns-logo-wrapper {
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+.header__sns .sns-logo-wrapper .logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  fill: #2978a0;
+}
+
+.header__title {
+  font-family: "Lobster", cursive;
+  font-size: 72px;
+  color: #2978a0;
+}
+
+.section {
+  width: 80%;
+}
+.section__header {
+  font-family: "Asap", sans-serif;
+  font-size: 40px;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10%;
+  margin-bottom: 100px;
+}
+.section--reverse {
+  flex-direction: row-reverse;
+}
+.section__header {
+  font-size: 40px;
+  color: #e34234;
+}
+.section .container {
+  width: 60%;
+}
+.section .image-wrapper {
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+}
+.section .image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section--home {
+  width: 80%;
+  display: block;
+}
+.section--home__header {
+  font-family: "Asap", sans-serif;
+  font-size: 40px;
+}
+
+.section--about {
+  margin-top: 350px;
+}
+.section--about .container {
+  transform: translateY(-500px);
+  opacity: 0;
+}
+.section--about .image-wrapper {
+  transform: translateY(500px);
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  height: fit-content;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  column-gap: 80px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.carousel__item {
+  scroll-snap-align: center;
+}
+.carousel__item__header {
+  text-align: center;
+}
+.carousel__item__header__title {
+  font-size: 40px;
+  font-family: "Asap", sans-serif;
+  color: #e34234;
+}
+.carousel__item__image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 600px;
+  width: 80vw;
+}
+.carousel__item__image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.carousel__item__information__links {
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 40px;
+}
+.carousel__item__information__links .logo-wrapper {
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+.carousel__item__information__links .logo-wrapper .logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  fill: #2978a0;
+}
+.carousel__item__information__techno {
+  margin: 16px 0;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 18px;
+  padding: 0 40px;
+}
+.carousel__item__information__techno .techno-tag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #2978a0;
+  color: #e0e2db;
+}
+.carousel__item__information__description {
+  padding: 0 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.wrapper .container {
+  width: calc(50% - 50px);
+  border-left: 1px solid #070707;
+  padding-left: 50px;
+}
+.wrapper .container--empty {
+  width: 40%;
+  height: 100px;
+  border-left: none;
+}
+
+/*# sourceMappingURL=App.css.map */

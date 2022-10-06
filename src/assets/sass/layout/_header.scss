@@ -1,0 +1,52 @@
+.header {
+  padding: 0 100px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  &__main {
+    &__subtitle {
+      margin: 0;
+      font-size: $text-size;
+      font-weight: 500;
+      .red {
+        color: $color-primary;
+      }
+    }
+    &__title {
+      font-family: $main-title-font;
+      font-size: $main-title-size;
+      margin: 10px 0;
+    }
+  }
+
+  &__sns {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30%;
+    margin-top: 40px;
+
+    .sns-logo-wrapper {
+      width: 35px;
+      height: 35px;
+      position: relative;
+      .logo {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        fill: $color-secondary;
+      }
+    }
+  }
+}
+
+.header {
+  // margin-bottom: 500px;
+  &__title {
+    font-family: $main-title-font;
+    font-size: $main-title-size;
+    color: $color-secondary;
+  }
+}
