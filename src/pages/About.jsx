@@ -1,5 +1,5 @@
 import React from "react";
-import computer from "../assets/images/computer.jpg";
+import computer from "../assets/images/pictures/computer.jpg";
 import {
   motion,
   useScroll,

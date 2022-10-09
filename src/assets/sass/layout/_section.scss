@@ -3,6 +3,10 @@
   &__header {
     font-family: $section-title-font;
     font-size: $section-title-size;
+
+    @include mobile-size {
+      font-size: $mobile-section-title-size;
+    }
   }
 }
 
@@ -17,12 +21,24 @@
   &--reverse {
     flex-direction: row-reverse;
   }
+
+  @include mobile-size {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
   &__header {
     font-size: $section-title-size;
     color: $color-primary;
+
+    @include mobile-size {
+      font-size: $mobile-section-title-size;
+    }
   }
   .container {
     width: 60%;
+    @include mobile-size {
+      width: 100%;
+    }
   }
   //   .container-image {
   //     width: 30%;
@@ -48,6 +64,14 @@
     &__header {
       font-family: $section-title-font;
       font-size: $section-title-size;
+
+      @include mobile-size {
+        font-size: $mobile-section-title-size;
+      }
+    }
+
+    @include mobile-size {
+      width: 100%;
     }
   }
 }

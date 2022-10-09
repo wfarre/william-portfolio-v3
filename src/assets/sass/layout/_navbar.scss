@@ -5,6 +5,11 @@
   align-items: center;
   flex-direction: row;
   column-gap: 30px;
+  @include mobile-size {
+    justify-content: center;
+    // position: fixed;
+    // top: 0;
+  }
   .menu-wrapper {
     position: relative;
     border: none;
@@ -47,6 +52,11 @@
   width: 100%;
   background-color: #fff;
   z-index: 999;
+  transform: scaleX(1) scaleY(1);
+  transform-origin: top right;
+  transition: transform 300ms;
+
+  // border-radius: 100%;
   .logo-wrapper {
     width: 50px;
     height: 50px;
@@ -83,6 +93,13 @@
     &:hover {
       color: $color-primary;
       cursor: pointer;
+    }
+  }
+
+  @include mobile-size {
+    padding: 20% 10%;
+    &__item {
+      font-size: $mobile-main-title-size;
     }
   }
 }

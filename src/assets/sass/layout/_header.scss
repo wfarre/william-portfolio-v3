@@ -4,6 +4,10 @@
   margin-top: 100px;
   margin-bottom: 100px;
 
+  @include mobile-size {
+    padding: 0 5%;
+  }
+
   &__main {
     &__subtitle {
       margin: 0;
@@ -12,11 +16,19 @@
       .red {
         color: $color-primary;
       }
+
+      @include mobile-size {
+        font-size: $mobile-text-size;
+      }
     }
     &__title {
       font-family: $main-title-font;
       font-size: $main-title-size;
       margin: 10px 0;
+
+      @include mobile-size {
+        font-size: $mobile-main-title-size;
+      }
     }
   }
 
@@ -26,10 +38,15 @@
     padding: 0 30%;
     margin-top: 40px;
 
+    @include mobile-size {
+      padding: 0 5%;
+    }
+
     .sns-logo-wrapper {
       width: 35px;
       height: 35px;
       position: relative;
+
       .logo {
         position: absolute;
         width: 100%;
@@ -45,8 +62,13 @@
 .header {
   // margin-bottom: 500px;
   &__title {
+    // position: fixed;
     font-family: $main-title-font;
     font-size: $main-title-size;
     color: $color-secondary;
+
+    @include mobile-size {
+      font-size: $mobile-main-title-size;
+    }
   }
 }

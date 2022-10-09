@@ -6,8 +6,14 @@ body {
   font-weight: 400;
   position: relative;
   margin: 0;
+  @include mobile-size {
+    font-size: $mobile-text-size;
+  }
 }
 
 .main {
   padding: 0 100px;
+  @include mobile-size {
+    padding: 0 10%;
+  }
 }

@@ -1,9 +1,9 @@
 import React from "react";
-import { ReactComponent as FBLogo } from "../assets/images/facebook.svg";
-import { ReactComponent as GithubLogo } from "../assets/images/github.svg";
-import { ReactComponent as TwitterLogo } from "../assets/images/twitter.svg";
-import { ReactComponent as InstaLogo } from "../assets/images/instagram.svg";
-import { ReactComponent as LinkedinLogo } from "../assets/images/linkedin.svg";
+import { ReactComponent as FBLogo } from "../assets/images/icons/facebook.svg";
+import { ReactComponent as GithubLogo } from "../assets/images/icons/github.svg";
+import { ReactComponent as TwitterLogo } from "../assets/images/icons/twitter.svg";
+import { ReactComponent as InstaLogo } from "../assets/images/icons/instagram.svg";
+import { ReactComponent as LinkedinLogo } from "../assets/images/icons/linkedin.svg";
 import Nav from "../Components/Nav/Nav";
 import Footer from "../Components/Footer/Footer";
 import { motion } from "framer-motion";

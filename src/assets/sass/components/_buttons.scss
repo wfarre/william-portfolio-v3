@@ -9,6 +9,10 @@
   border: solid 2px $color-primary;
   cursor: pointer;
 
+  @include mobile-size {
+    font-size: 16px;
+  }
+
   &:hover {
     // border: solid 2px $color-primary;
     color: $color-primary;

@@ -1,5 +1,5 @@
-import { ReactComponent as Cross } from "../../assets/images/xmark-solid.svg";
-import { ReactComponent as Avatar } from "../../assets/images/avataaars.svg";
+import { ReactComponent as Cross } from "../../assets/images/icons/xmark-solid.svg";
+import { ReactComponent as Avatar } from "../../assets/images/pictures/avataaars.svg";
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
