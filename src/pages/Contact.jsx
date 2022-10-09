@@ -1,5 +1,7 @@
 import React from "react";
 
+import { ReactComponent as ContactIcon } from "../assets/images/pictures/undraw_contact_us.svg";
+
 const Contact = () => {
   return (
     <div>
@@ -8,7 +10,9 @@ const Contact = () => {
       </header>
       <main className="main">
         <div className="wrapper">
-          <div className="container container--empty"></div>
+          <div className="container container--empty">
+            <ContactIcon />
+          </div>
           <div className="container">
             <div className="contact__info">
               <div className="contact__info__item">

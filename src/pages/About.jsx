@@ -14,6 +14,11 @@ import Section from "../Components/Section/Section";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+import { ReactComponent as ProgrammingIcon } from "../assets/images/pictures/undraw_web_development.svg";
+import { ReactComponent as HobbyIcon } from "../assets/images/pictures/undraw_making_art.svg";
+
+import { ReactComponent as WorldIcon } from "../assets/images/pictures/undraw_the_world_is_mine.svg";
+
 const Button = () => {
   return <div></div>;
 };
@@ -31,7 +36,7 @@ const sectionContents = [
           "Until the day, I decided to go back to programming and start learning web development, and I really enjoyed, especially the front end. Even though I am front-end developper, I have some notions in back-end development as well, but I need to understand better the back-end development to be a better front-end developper.",
       },
     ],
-    image: computer,
+    image: <ProgrammingIcon className="img" />,
   },
   {
     title: "Languages",
@@ -49,7 +54,7 @@ const sectionContents = [
           "I guess my passion for languages also lead to learn programming as well.",
       },
     ],
-    image: computer,
+    image: <WorldIcon className="img" />,
   },
   {
     title: "My hobbies",
@@ -63,7 +68,7 @@ const sectionContents = [
           "Another passion, maybe connected with my love for Japanese culture, but I do enjoy martial arts, especially aikido, even though I haven’t practice a lot in my life, but I enjoy the movements of it and the clothes. For now, as I am in Taiwan, I try to learn some Taichichuan, I do enjoy it as weel.",
       },
     ],
-    image: computer,
+    image: <HobbyIcon className="img" />,
   },
 ];
 

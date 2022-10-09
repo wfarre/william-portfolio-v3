@@ -119,7 +119,8 @@ const Section = ({ title, content, image, reverse }) => {
         <footer className="section__footer"></footer>
       </div>
       <div className="image-wrapper" ref={imgRef}>
-        <img src={image} alt="" />
+        {/* <img src={image} alt="" /> */}
+        {image}
       </div>
     </section>
   );
