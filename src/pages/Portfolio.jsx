@@ -107,7 +107,7 @@ const Portfolio = () => {
     carouselViewport.scroll({
       // left: currentSlide * (slideWidth - 160),
       // left: currentSlide * (slideWidth + 64),
-      left: currentSlide * (slideWidth - 160),
+      left: currentSlide * slideWidth,
       behavior: "smooth",
     });
 

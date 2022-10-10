@@ -26,12 +26,14 @@
 //   overflow-y: scroll;
 // }
 .container {
-  width: 100%;
+  // width: 100%;
   position: relative;
+  padding: $main-padding;
+  // width: calc(100% - 2 * 7%);
 
   @include mobile-size() {
-    padding: 0 10%;
-    width: 80%;
+    padding: $main-padding;
+    width: calc(100% - 2 * 7%);
   }
 }
 .carousel {
@@ -40,13 +42,14 @@
   // align-items: center;
   position: relative;
   // padding: 0 100px;
-  width: calc(100% - 10% * 2);
-  padding: 0 10%;
+  // width: calc(100% - 7% * 2);
+  padding: $main-padding;
+  width: calc(100% - 2 * 7%);
   // width: 100vw;
   height: fit-content;
   overflow-x: scroll;
   overflow-y: hidden;
-  column-gap: 80px;
+  column-gap: 7%;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 

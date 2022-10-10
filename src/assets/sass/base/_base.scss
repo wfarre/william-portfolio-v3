@@ -12,7 +12,8 @@ body {
 }
 
 .main {
-  padding: 0 100px;
+  // padding: 0 100px;
+  padding: $main-padding;
   @include mobile-size {
     padding: 0 10%;
   }
