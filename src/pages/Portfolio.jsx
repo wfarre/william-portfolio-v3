@@ -14,6 +14,11 @@ import ArgenBank from "../assets/images/pictures/argent-bank.png";
 import Ohmyfood from "../assets/images/pictures/ohmyfood.png";
 import Fisheye from "../assets/images/pictures/fisheye.png";
 
+import KasaMobile from "../assets/images/pictures/portfolio - mobile/kasa.png";
+import OMFMobile from "../assets/images/pictures/portfolio - mobile/ohmyfood.png";
+import ABMobile from "../assets/images/pictures/portfolio - mobile/argentbank.png";
+import FisheyeMobile from "../assets/images/pictures/portfolio - mobile/fisheye.png";
+
 const portfolioSlides = [
   {
     title: "Kasa",
@@ -23,6 +28,7 @@ const portfolioSlides = [
     github: "https://github.com/wfarre/kasa-app-P11/tree/master",
     website: "https://kasa-app-p11.vercel.app/",
     picture: Kasa,
+    pictureMobile: KasaMobile,
     id: 0,
   },
   {
@@ -33,6 +39,7 @@ const portfolioSlides = [
     github: "https://github.com/wfarre/WilliamFarre_P3_12012022/tree/main",
     website: "https://p3-ohmyfood.vercel.app/",
     picture: Ohmyfood,
+    pictureMobile: OMFMobile,
     id: 1,
   },
   {
@@ -42,6 +49,7 @@ const portfolioSlides = [
     tags: ["HTML", "CSS", "Javascript", "React", "Redux"],
     github: "https://github.com/wfarre/bank-app",
     picture: ArgenBank,
+    pictureMobile: ABMobile,
     id: 2,
   },
   {
@@ -52,6 +60,7 @@ const portfolioSlides = [
     github: "https://github.com/wfarre/Front-End-Fisheye/tree/main",
     website: "https://front-end-fisheye.vercel.app/",
     picture: Fisheye,
+    pictureMobile: FisheyeMobile,
     id: 3,
   },
 ];
@@ -152,6 +161,7 @@ const Portfolio = () => {
                   website={slide.website}
                   picture={slide.picture}
                   id={slide.id}
+                  pictureMobile={slide.pictureMobile}
                 />
               );
             })}

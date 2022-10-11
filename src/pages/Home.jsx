@@ -8,6 +8,8 @@ import Nav from "../Components/Nav/Nav";
 import Footer from "../Components/Footer/Footer";
 import { motion } from "framer-motion";
 
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div
@@ -28,22 +30,33 @@ const Home = () => {
           </h2>
         </div>
         <div className="header__cta">
-          <button className="button">CONTACT ME</button>
+          <a href="mailto:william.farre@gmail.com">
+            <button className="button">CONTACT ME</button>
+          </a>
         </div>
         <div className="header__sns">
-          <a className="sns-logo-wrapper" href="google.com">
+          <a
+            className="sns-logo-wrapper"
+            href="https://www.facebook.com/william.farre/"
+          >
             <FBLogo className="logo" />
           </a>
-          <a className="sns-logo-wrapper" href="google.com">
+          <a className="sns-logo-wrapper" href="https://twitter.com/TriCSSter1">
             <TwitterLogo className="logo" />
           </a>
-          <a className="sns-logo-wrapper" href="google.com">
+          <a
+            className="sns-logo-wrapper"
+            href="https://www.instagram.com/wfarre/"
+          >
             <InstaLogo className="logo" />
           </a>
-          <a className="sns-logo-wrapper" href="google.com">
+          <a
+            className="sns-logo-wrapper"
+            href="https://www.linkedin.com/in/william-farre-50657391/"
+          >
             <LinkedinLogo className="logo" />
           </a>
-          <a className="sns-logo-wrapper" href="google.com">
+          <a className="sns-logo-wrapper" href="https://github.com/wfarre">
             <GithubLogo className="logo" />
           </a>
         </div>
@@ -63,7 +76,9 @@ const Home = () => {
             </p>
           </div>
           <footer className="section__footer">
-            <button className="button">ABOUT ME</button>
+            <Link to="/about">
+              <button className="button">ABOUT ME</button>
+            </Link>
           </footer>
         </div>
       </main>

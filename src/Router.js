@@ -1,4 +1,4 @@
-import "./assets/styles/App.css";
+import "./assets/styles/prefixed/App.css";
 import {
   createBrowserRouter,
   RouterProvider,

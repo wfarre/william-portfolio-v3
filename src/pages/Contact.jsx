@@ -11,7 +11,7 @@ const Contact = () => {
       <main className="main">
         <div className="wrapper">
           <div className="container container--empty">
-            <ContactIcon />
+            <ContactIcon className="img" />
           </div>
           <div className="container">
             <div className="contact__info">

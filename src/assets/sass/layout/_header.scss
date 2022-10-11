@@ -8,6 +8,10 @@
     padding: 0 5%;
   }
 
+  // &__cta {
+  //   height: 100%;
+  // }
+
   &__main {
     &__subtitle {
       margin: 0;
@@ -21,6 +25,7 @@
         font-size: $mobile-text-size;
       }
     }
+
     &__title {
       font-family: $main-title-font;
       font-size: $main-title-size;
@@ -34,13 +39,14 @@
 
   &__sns {
     display: flex;
-    justify-content: space-around;
-    padding: 0 30%;
+    justify-content: center;
+    column-gap: 7%;
+    // padding: 0 30%;
     margin-top: 40px;
 
-    @include mobile-size {
-      padding: 0 5%;
-    }
+    // @include mobile-size {
+    //   padding: 0 5%;
+    // }
 
     .sns-logo-wrapper {
       width: 35px;

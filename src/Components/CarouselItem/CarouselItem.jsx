@@ -17,6 +17,7 @@ const CarouselItem = ({
   github,
   website,
   picture,
+  pictureMobile,
 }) => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -73,11 +74,14 @@ const CarouselItem = ({
         </header>
 
         <div className="carousel__item__image" ref={imageRef}>
-          <img
-            className="carousel__item__image__image"
-            src={picture}
-            alt=""
-          ></img>
+          <picture>
+            <source media="(max-width: 650px)" srcSet={pictureMobile} />
+            <img
+              className="carousel__item__image__image"
+              src={picture}
+              alt=""
+            ></img>
+          </picture>
         </div>
 
         <div className="carousel__item__information">

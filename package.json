@@ -19,6 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "sass": "sass --watch ./src/assets/sass/main.scss ./src/assets/styles/App.css",
+    "prefix": "postcss ./src/assets/styles/App.css --use autoprefixer -d ./src/assets/styles/prefixed/",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -29,7 +30,8 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
+  "browserslist":
+  {
     "production": [
       ">0.2%",
       "not dead",

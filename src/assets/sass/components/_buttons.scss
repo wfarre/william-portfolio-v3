@@ -8,6 +8,7 @@
   border-radius: 15px;
   border: solid 2px $color-primary;
   cursor: pointer;
+  text-decoration: none;
 
   @include mobile-size {
     font-size: 16px;
