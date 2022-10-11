@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { motion } from "framer-motion";
 import CarouselItem from "../Components/CarouselItem/CarouselItem";
@@ -75,12 +75,33 @@ const Portfolio = () => {
   //   setCurrentSlide(0);
   // }, []);
 
-  console.log(slideMax);
-  console.log(currentSlide);
-
   // useEffect(() => {
   //   setSlideMax(portfolioSlides.length);
   // }, );
+
+  // window.addEventListener("keyup", (e) => {
+  //   const action = e.key;
+
+  //   switch (action) {
+  //     case "ArrowRight":
+  //       if (currentSlide === slideMax) {
+  //         return;
+  //       } else {
+  //         setCurrentSlide(currentSlide + 1);
+  //       }
+  //       break;
+  //     case "ArrowLeft":
+  //       if (currentSlide === 0) {
+  //         return;
+  //       } else {
+  //         setCurrentSlide(currentSlide - 1);
+  //       }
+  //       break;
+  //     default:
+  //       console.log(action);
+  //       break;
+  //   }
+  // });
 
   const handleClick = (e) => {
     console.log(e.target.id);
@@ -108,7 +129,6 @@ const Portfolio = () => {
   };
 
   useEffect(() => {
-    console.log(currentSlide);
     const carouselViewport = document.querySelector(".carousel");
     const slideWidth = carouselViewport.offsetWidth;
 

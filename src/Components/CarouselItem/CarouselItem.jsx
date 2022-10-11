@@ -1,9 +1,6 @@
 import React from "react";
 import { ReactComponent as GithubLogo } from "../../assets/images/icons/github.svg";
 import { ReactComponent as GlobeLogo } from "../../assets/images/icons/globe-solid.svg";
-
-import Image from "../../assets/images/pictures/computer.jpg";
-
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useRef, useEffect } from "react";
@@ -30,10 +27,13 @@ const CarouselItem = ({
     gsap.to(".carousel__item .carousel__item__header__title", {
       opacity: 0,
       y: 100,
+      duration: 0.5,
     });
 
     gsap.to(".carousel__item .carousel__item__information", {
       opacity: 0,
+      scaleY: 0,
+      duration: 0.5,
     });
     gsap.to(".carousel__item__image", {
       scale: 0.9,
@@ -44,11 +44,16 @@ const CarouselItem = ({
     gsap.to(".carousel__item.active .carousel__item__header__title", {
       opacity: 1,
       y: 0,
+      duration: 1,
+
       // scale: 1,
     });
 
     gsap.to(".carousel__item.active .carousel__item__information", {
       opacity: 1,
+      scaleY: 1,
+      duration: 0.5,
+      delay: 0.7,
     });
     // gsap.to(".carousel__item__image__image", {
     //   scale: 0.9,
@@ -96,7 +101,11 @@ const CarouselItem = ({
             </div>
             <div className="carousel__item__information__techno">
               {tags.map((tag) => {
-                return <span className="techno-tag">{tag}</span>;
+                return (
+                  <span key={tag} className="techno-tag">
+                    {tag}
+                  </span>
+                );
               })}
               {/* <span className="techno-tag">HTML</span> */}
               {/* <span className="techno-tag">CSS</span> */}

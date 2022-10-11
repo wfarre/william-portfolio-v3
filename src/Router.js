@@ -1,11 +1,7 @@
-import "./assets/styles/prefixed/App.css";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
+import "./assets/styles/App.css";
+// import "./assets/styles/prefixed/App.css";
+
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 
 import React from "react";

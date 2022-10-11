@@ -367,6 +367,12 @@ body {
 .container {
   position: relative;
   padding: 0 7%;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.container ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 @media screen and (max-width: 650px) {
   .container {
@@ -381,7 +387,8 @@ body {
   padding: 0 7%;
   width: 86%;
   height: fit-content;
-  overflow-x: scroll;
+  overflow: hidden;
+  overflow-x: hidden;
   overflow-y: hidden;
   column-gap: 7%;
   scroll-snap-type: x mandatory;
@@ -396,6 +403,7 @@ body {
 .carousel__item {
   position: relative;
   scroll-snap-align: center;
+  counter-increment: item;
 }
 @media screen and (max-width: 650px) {
   .carousel__item {
@@ -454,6 +462,9 @@ body {
   top: 0;
   left: 0;
   object-fit: contain;
+}
+.carousel__item__information {
+  transform: scaleY(0);
 }
 .carousel__item__information__header {
   display: flex;
