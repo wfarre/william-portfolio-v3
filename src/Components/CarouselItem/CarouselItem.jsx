@@ -22,8 +22,6 @@ const CarouselItem = ({
   const titleRef = useRef();
 
   useEffect(() => {
-    // console.log("hhelleroeorwr");
-    // console.log(id);
     gsap.to(".carousel__item .carousel__item__header__title", {
       opacity: 0,
       y: 100,
@@ -107,23 +105,10 @@ const CarouselItem = ({
                   </span>
                 );
               })}
-              {/* <span className="techno-tag">HTML</span> */}
-              {/* <span className="techno-tag">CSS</span> */}
             </div>
           </div>
           <div className="carousel__item__information__description">
-            <p>
-              {description}
-              {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              bibendum maximus viverra. Vivamus luctus feugiat elit et mollis.
-              Suspendisse tempus imperdiet arcu eu faucibus. Aenean non augue
-              sed libero posuere lacinia consequat id odio. Proin ut est vitae
-              mauris hendrerit tempus et non arcu. Phasellus sodales rutrum
-              elit, sit amet dapibus enim sagittis vitae. Cras sed purus ac odio
-              dictum tempus. Praesent sodales euismod neque. Donec nec nulla at
-              ex ornare mollis in at dui. Pellentesque habitant morbi tristique
-              senectus et netus et malesuada fames ac turpis egestas. */}
-            </p>
+            <p>{description}</p>
           </div>
         </div>
       </article>

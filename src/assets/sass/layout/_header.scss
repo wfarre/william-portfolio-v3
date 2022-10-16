@@ -17,6 +17,7 @@
       margin: 0;
       font-size: $text-size;
       font-weight: 500;
+      transform: translateY(74px);
       .red {
         color: $color-primary;
       }
@@ -30,6 +31,8 @@
       font-family: $main-title-font;
       font-size: $main-title-size;
       margin: 10px 0;
+      transform: translateY(74px);
+      // bottom: 74px;
 
       @include mobile-size {
         font-size: $mobile-main-title-size;
@@ -82,4 +85,8 @@
       font-size: $mobile-main-title-size;
     }
   }
+}
+
+.title-wrapper {
+  overflow: hidden;
 }

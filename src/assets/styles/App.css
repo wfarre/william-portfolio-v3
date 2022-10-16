@@ -206,6 +206,7 @@ body {
   margin: 0;
   font-size: 24px;
   font-weight: 500;
+  transform: translateY(74px);
 }
 .header__main__subtitle .red {
   color: #e34234;
@@ -219,6 +220,7 @@ body {
   font-family: "Lobster", cursive;
   font-size: 72px;
   margin: 10px 0;
+  transform: translateY(74px);
 }
 @media screen and (max-width: 650px) {
   .header__main__title {
@@ -258,6 +260,10 @@ body {
   .header__title {
     font-size: 48px;
   }
+}
+
+.title-wrapper {
+  overflow: hidden;
 }
 
 .section {

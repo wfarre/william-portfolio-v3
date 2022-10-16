@@ -17,4 +17,6 @@ body {
   @include mobile-size {
     padding: 0 10%;
   }
+
+  overflow: hidden;
 }

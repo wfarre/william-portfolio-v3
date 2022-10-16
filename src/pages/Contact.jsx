@@ -1,13 +1,26 @@
-import React from "react";
+import gsap from "gsap";
+import React, { useEffect } from "react";
 
 import { ReactComponent as ContactIcon } from "../assets/images/pictures/undraw_contact_us.svg";
+import Header from "../Components/Header/Header";
 
 const Contact = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".main",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        delay: 1,
+        duration: 0.5,
+      }
+    );
+  });
   return (
     <div>
-      <header className="header">
-        <h1 className="header__title">Contact</h1>
-      </header>
+      <Header title="Contact" />
       <main className="main">
         <div className="wrapper">
           <div className="container container--empty">
