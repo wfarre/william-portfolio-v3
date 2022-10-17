@@ -15,6 +15,7 @@ body {
 
 .main {
   padding: 0 7%;
+  overflow: hidden;
 }
 @media screen and (max-width: 650px) {
   .main {
@@ -394,7 +395,7 @@ body {
   width: 86%;
   height: fit-content;
   overflow: hidden;
-  overflow-x: hidden;
+  overflow-x: scroll;
   overflow-y: hidden;
   column-gap: 7%;
   scroll-snap-type: x mandatory;
