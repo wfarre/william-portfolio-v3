@@ -23,15 +23,15 @@ export const sectionContents = [
     content: [
       {
         paragraph:
-          "I am French, so I can speak Franch, but I can also speak English and Japanese fluently. I lived in Japan for 5 years where I have worked for 4 years mainly in the travel/hospitality industry.",
+          "I am French, so I can speak Franch, and I can also speak English and Japanese fluently. I lived in Japan for 5 years where I have worked for 4 years mainly in the travel/hospitality industry.",
       },
       {
         paragraph:
-          "Now, I am currently living in Taiwan where I am struggling learning Chinese.",
+          "Now, I am currently living in Taiwan where I am currently learning Chinese.",
       },
       {
         paragraph:
-          "I guess my passion for languages also lead me to learn programming as well.",
+          "I guess my passion for languages also lead me to learn programming as well. Here, instead of communicating with people, I am learning to communicate with my computer.",
       },
     ],
     image: <WorldIcon className="img" alt="hello" />,
@@ -41,11 +41,11 @@ export const sectionContents = [
     content: [
       {
         paragraph:
-          "I have a big interests in photography. I wish I could be a better photographer but for now, I do enjoy going somewhere and I take what I feel interesting to be taking.",
+          "I have a big interests in photography. I am an amateur, so for now, I do enjoy going somewhere and I take what I feel interesting to be taking.",
       },
       {
         paragraph:
-          "Another passion, maybe connected with my love for Japanese culture, but I do enjoy martial arts, especially aikido, even though I haven’t practice a lot in my life, but I enjoy the movements of it and the clothes. For now, as I am in Taiwan, I try to learn some Taichichuan, I do enjoy it as well.",
+          "Another passion, maybe connected with my love for Japanese culture, I do enjoy martial arts, especially aikido, I enjoy the movements of it and the clothes. For now, as I am in Taiwan, I am learning Taichichuan, which I do enjoy it as well.",
       },
     ],
     image: <HobbyIcon className="img" />,
