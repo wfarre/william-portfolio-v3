@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 
 const Home = () => {
+  document.title = "William Farre - Home";
   const mainTitle = useRef();
   const subTitle = useRef();
 

@@ -10,6 +10,8 @@ import { portfolioSlides } from "../assets/data/portfolioSlides";
 import Header from "../Components/Header/Header";
 
 const Portfolio = () => {
+  document.title = "William Farre - Portfolio";
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const [slideMax, setSlideMax] = useState(3);

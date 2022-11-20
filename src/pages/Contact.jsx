@@ -5,6 +5,8 @@ import { ReactComponent as ContactIcon } from "../assets/images/pictures/undraw_
 import Header from "../Components/Header/Header";
 
 const Contact = () => {
+  document.title = "William Farre - Contact";
+
   useEffect(() => {
     gsap.fromTo(
       ".main",

@@ -7,6 +7,8 @@ import { sectionContents } from "../assets/data/aboutdata";
 import Header from "../Components/Header/Header";
 
 const About = () => {
+  document.title = "William Farre - About";
+
   // const { scrollYProgress } = useScroll();
   // const scaleX = useSpring(scrollYProgress, {
   //   stiffness: 100,
