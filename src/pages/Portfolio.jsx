@@ -14,7 +14,7 @@ const Portfolio = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const [slideMax, setSlideMax] = useState(3);
+  const [slideMax, setSlideMax] = useState(4);
 
   useEffect(() => {
     gsap.fromTo(

@@ -3,11 +3,13 @@ import ArgenBank from "../images/pictures/argent-bank.png";
 
 import Ohmyfood from "../images/pictures/ohmyfood.png";
 import Fisheye from "../images/pictures/fisheye.png";
+import Bookmark from "../images/pictures/bookmark- portfolio/bookmark.png";
 
 import KasaMobile from "../images/pictures/portfolio - mobile/kasa.png";
 import OMFMobile from "../images/pictures/portfolio - mobile/ohmyfood.png";
 import ABMobile from "../images/pictures/portfolio - mobile/argentbank.png";
 import FisheyeMobile from "../images/pictures/portfolio - mobile/fisheye.png";
+import BookmarkMobile from "../images/pictures/bookmark- portfolio/bookmarkMobile.png";
 
 export const portfolioSlides = [
   {
@@ -51,6 +53,17 @@ export const portfolioSlides = [
     website: "https://front-end-fisheye.vercel.app/",
     picture: Fisheye,
     pictureMobile: FisheyeMobile,
+    id: 3,
+  },
+  {
+    title: "Bookmark",
+    description:
+      "This is the most recent project I made. The design is from frontendmentor.io. This time I used React which might be overkilled for the project. The goal was to practice Typescript with React and organize the code to make it the most readable. The challenge was mainly the design as no figma file was provided.",
+    tags: ["ReactJS", "Sass", "Typescript"],
+    github: "https://github.com/wfarre/bookmark/tree/master",
+    website: "https://bookmark-sandy.vercel.app/",
+    picture: Bookmark,
+    pictureMobile: BookmarkMobile,
     id: 3,
   },
 ];
