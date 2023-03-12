@@ -4,12 +4,14 @@ import ArgenBank from "../images/pictures/argent-bank.png";
 import Ohmyfood from "../images/pictures/ohmyfood.png";
 import Fisheye from "../images/pictures/fisheye.png";
 import Bookmark from "../images/pictures/bookmark- portfolio/bookmark.png";
+import MultiStep from "../images/pictures/multi-step - portfolio/multistep.png";
 
 import KasaMobile from "../images/pictures/portfolio - mobile/kasa.png";
 import OMFMobile from "../images/pictures/portfolio - mobile/ohmyfood.png";
 import ABMobile from "../images/pictures/portfolio - mobile/argentbank.png";
 import FisheyeMobile from "../images/pictures/portfolio - mobile/fisheye.png";
 import BookmarkMobile from "../images/pictures/bookmark- portfolio/bookmarkMobile.png";
+import MultiStepMobile from "../images/pictures/multi-step - portfolio/multistepMobile.png";
 
 export const portfolioSlides = [
   {
@@ -64,6 +66,17 @@ export const portfolioSlides = [
     website: "https://bookmark-sandy.vercel.app/",
     picture: Bookmark,
     pictureMobile: BookmarkMobile,
-    id: 3,
+    id: 4,
   },
+  // {
+  //   title: "Multi-step form",
+  //   description:
+  //     "The design is from frontendmentor.io. I wanted to make a multi-step to practice my skills in ReactJS and also, to practice how to make a multi-step form.",
+  //   tags: ["ReactJS", "Sass"],
+  //   github: "https://github.com/wfarre/multi-step-form/tree/master",
+  //   website: "https://multi-step-form-ruby.vercel.app/",
+  //   picture: MultiStep,
+  //   pictureMobile: MultiStepMobile,
+  //   id: 5,
+  // },
 ];
